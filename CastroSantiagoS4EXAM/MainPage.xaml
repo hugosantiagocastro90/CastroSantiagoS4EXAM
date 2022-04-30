@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CastroSantiagoS4EXAM.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Castro Santiago S4 Exam" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Desarrollado Por:" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Santiago Castro" FontSize="16" Padding="30,0,30,0"/>
+        <Label Text="Noveno B Sistemas" FontSize="16" Padding="30,0,30,0"/>
+        <Label Text="UISRAEL" FontSize="16" Padding="30,0,30,0"/>
+        <Button x:Name="btnIniciar" Text="Iniciar" Background="Gray" BorderRadius="20" TextColor="Red" Clicked="btnIniciar_Clicked" />
+    </StackLayout>
+
+</ContentPage>

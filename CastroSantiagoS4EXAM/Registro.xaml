@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CastroSantiagoS4EXAM.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Registro" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Grid VerticalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+               
+                <Label Text="Nombre: " Grid.Row="1" Grid.Column="0" />
+                <Entry x:Name="txtNombre" Placeholder="Estudiante" TextColor="Gray" Grid.Row="1" Grid.Column="1"/>
+                <Label Text="Monto inicial: " Grid.Row="2" Grid.Column="0"  />
+                <Entry x:Name="txtMontoInicial" Placeholder="Ingrese monto" TextColor="Gray" Grid.Row="2" Grid.Column="1" Keyboard="Numeric"/>
+                <Label Text="Pago mensual: " Grid.Row="3" Grid.Column="0" />
+                <Entry x:Name="txtPagoMensual" Placeholder="" Grid.Row="3" Grid.Column="1" IsEnabled="false"/>
+                <Button x:Name="btnCalcular" Clicked="btnCalcular_Clicked" Text="Calcular" Background="yellow" BorderRadius="20" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Button x:Name="btnEnviar" Clicked="btnEnviar_Clicked" Text="Guardar" Background="green" BorderRadius="20" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+            </Grid>
+            <Label x:Name="lblUsuario"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
